@@ -24,9 +24,11 @@ Cada uma das **q** linhas subsequentes contém três inteiros separados por espa
 $$
 0 <= q <= 500
 $$
+
 $$
 0 <= a, b <= 50
 $$
+
 $$
 1 <= n <= 15
 $$
@@ -66,6 +68,7 @@ Temos duas consultas:
    $$
     s0 = 0 + 1 * 2 = 2
    $$
+
    $$
     s1 = 0 + 1 * 2 + 2 * 2 = 6
    $$
@@ -78,23 +81,27 @@ Temos duas consultas:
 
 2. Usamos `a = 5, b = 3 e n = 5` para produzir a seguinte série:
    
-   $$
-    s0 = 5 + 1 * 3 = 8
-   $$
-   $$
-    s1 = 5 + 1 * 3 + 2 * 3 = 14
-   $$
-   $$
-    s2 = 5 + 1 * 3 + 2 * 3 + 4 * 3 = 26
-   $$
-   $$
-    s3 = 5 + 1 * 3 + 2 * 3 + 4 * 3 + 8 * 3 = 50
-   $$
-   $$
-    s4 = 5 + 1 * 3 + 2 * 3 + 4 * 3 + 8 * 3 + 16 * 3 = 98
-   $$
+$$
+s0 = 5 + 1 * 3 = 8
+$$
 
-   Assim, imprimimos os primeiros cinco termos como uma única linha de inteiros separados por espaço.
+$$
+s1 = 5 + 1 * 3 + 2 * 3 = 14
+$$
+
+$$
+s2 = 5 + 1 * 3 + 2 * 3 + 4 * 3 = 26
+$$
+
+$$
+s3 = 5 + 1 * 3 + 2 * 3 + 4 * 3 + 8 * 3 = 50
+$$
+
+$$
+s4 = 5 + 1 * 3 + 2 * 3 + 4 * 3 + 8 * 3 + 16 * 3 = 98
+$$
+
+Assim, imprimimos os primeiros cinco termos como uma única linha de inteiros separados por espaço.
 
 ---
 
