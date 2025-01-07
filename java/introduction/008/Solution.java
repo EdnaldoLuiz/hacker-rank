@@ -2,19 +2,12 @@ import java.util.*;
 
 class Solution {
     
-    public static String dataType(long valor) {
+    public static void dataType(long valor) {
         System.out.println(valor + " can be fitted in:");
-        if(valor >= Byte.MIN_VALUE && valor <= Byte.MAX_VALUE) {
-            return "* byte";
-        } else if(valor >= Short.MIN_VALUE && valor <= Byte.MAX_VALUE) {
-            return "* short";
-        } else if(valor >= Integer.MIN_VALUE && valor <= Integer.MAX_VALUE) {
-            return "* int";
-        } else if(valor >= Long.MIN_VALUE && valor <= Long.MAX_VALUE) {
-            return "* long";
-        } else {
-            return "can't be fitted anywhere.";
-        }
+        if(valor >= Byte.MIN_VALUE && valor <= Byte.MAX_VALUE) System.out.println("* byte");
+        if(valor >= Short.MIN_VALUE && valor <= Byte.MAX_VALUE) System.out.println("* short");
+        if(valor >= Integer.MIN_VALUE && valor <= Integer.MAX_VALUE) System.out.println("* int");
+        if(valor >= Long.MIN_VALUE && valor <= Long.MAX_VALUE) System.out.println("* long");
     }
     
     public static void main(String []argh) {
@@ -22,11 +15,11 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
-        for(int i = 0; i < t; i++) {
+        for(int i=0;i<t;i++) {
 
             try {
                 long x = sc.nextLong();
-                System.out.println(dataType(x));
+                dataType(x);
             } catch(Exception e) {
                 System.out.println(sc.next()+" can't be fitted anywhere.");
             }
