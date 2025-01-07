@@ -105,7 +105,7 @@ class Solution {
     public static void dataType(long valor) {
         System.out.println(valor + " can be fitted in:");
         if(valor >= Byte.MIN_VALUE && valor <= Byte.MAX_VALUE) System.out.println("* byte");
-        if(valor >= Short.MIN_VALUE && valor <= Byte.MAX_VALUE) System.out.println("* short");
+        if(valor >= Short.MIN_VALUE && valor <= Short.MAX_VALUE) System.out.println("* short");
         if(valor >= Integer.MIN_VALUE && valor <= Integer.MAX_VALUE) System.out.println("* int");
         if(valor >= Long.MIN_VALUE && valor <= Long.MAX_VALUE) System.out.println("* long");
     }
