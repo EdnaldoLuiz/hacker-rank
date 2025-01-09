@@ -1,6 +1,6 @@
 
 
-# Java Datatypes
+<h1 align=center> Java Datatypes </h1>
 
 ## Objetivo
 

@@ -1,4 +1,4 @@
-# Java Loops II
+<h1 align=center> Java Loops II </h1>
 
 ## Objetivo
 Usamos os inteiros **a**, **b** e **n** para criar a seguinte série:

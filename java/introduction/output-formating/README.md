@@ -1,4 +1,4 @@
-<h1 align=center> Formatação de Saída em Java </h1>
+<h1 align=center> Java Output Formating </h1>
 
 ## Objetivo
 
