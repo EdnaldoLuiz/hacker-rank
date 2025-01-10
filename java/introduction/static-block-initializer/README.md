@@ -46,9 +46,10 @@ O uso do **bloco de inicialização estática** será fundamental para realizar 
 
 - Se ambos os valores (**breadth** e **height**) forem maiores que zero, a saída deve ser o resultado inteiro da área do paralelogramo.
 - Caso um ou ambos os valores sejam menores ou iguais a zero, a saída deve ser:
-  ```
-  java.lang.Exception: Breadth and height must be positive
-  ```
+
+```
+java.lang.Exception: Breadth and height must be positive
+```
 
 ---
 
@@ -83,7 +84,30 @@ java.lang.Exception: Breadth and height must be positive
 ## Código da Solução
 
 ```java
+public class Solution {
 
+    static int B, H;
+    static boolean flag;
+
+    static {
+        Scanner scanner = new Scanner(System.in);
+        B = scanner.nextInt();
+        H = scanner.nextInt();
+        if(B > 0 && H > 0) {
+            flag = true;
+        } else {
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+        }
+        scanner.close();
+    }
+
+    public static void main(String[] args) {
+            if(flag){
+                int area=B*H;
+                System.out.print(area);
+        }
+    }//end of main
+}//end of class
 ```
 
 > **Observação**: Caso o valor de **B** ou **H** seja inválido, a mensagem de exceção é exibida imediatamente no bloco estático, e a variável `flag` indica que não deve haver nenhum outro processamento na função `main`.
